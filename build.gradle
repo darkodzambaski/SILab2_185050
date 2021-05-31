@@ -1,0 +1,21 @@
+plugins {
+    id 'java'
+}
+
+group 'SILab2'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.7.0'
+    testRuntime 'org.junit.jupiter:junit-jupiter:5.7.0'
+    testCompile 'org.junit.jupiter:junit-jupiter:5.7.0'
+}
+test {
+    jvmArgs '--enable-preview'
+    useJUnitPlatform()
+}
+
